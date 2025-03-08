@@ -1,0 +1,1036 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 300%;
+    background-color: black;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    max-width: 20%;
+    height: 200%;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar h1 {
+    margin-top: 0;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sidebar a:hover {
+    background-color: #333;
+  }
+  
+  .content {
+    max-width: 110%;
+    margin-right: 0;
+    
+    background-image: url("Front.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .content h1 {
+    margin-top: 0;
+  }
+  
+  .content p {
+    margin-bottom: 1rem;
+  }
+  
+  .profile-image {
+    justify-content: center;
+     margin: 3vw;
+     width: 10rem;
+     height: 8rem;
+     
+    border-radius: 50%;
+    margin-top: 0;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Neon glow effect */
+    transition: 0.3s ease-in-out;
+   
+  }
+
+  
+  
+  .written1{
+      color: aliceblue;
+      margin-left: 25vw;
+      margin-top: 12.5rem;
+      align-items: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 4rem
+      color: aliceblue;
+  }
+  
+  .written2{
+      margin-left: 31.25vw;
+      margin-top: 8vw;
+      align-items: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 3rem;
+      color: rgb(229, 231, 233);
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+  }
+  
+  
+  
+  @keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Apply animation */
+.written1 {
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.19rem solid white;
+    display: inline-block;
+    width: 0;
+    animation: typing 4s steps(30, end) infinite, blink 0.8s step-end infinite;
+    position: relative; /* Ensure it's above other elements */
+    z-index: 1; /* Ensure it appears above other elements, like images */
+}
+
+  
+  
+  @keyframes blink-color {
+      0% {
+          opacity: 1;
+          color: red;
+      }
+      25% {
+          opacity: 0.5;
+          color: rgb(255, 2, 234);
+      }
+      50% {
+          opacity: 1;
+          color: green;
+      }
+      75% {
+          opacity: 0.5;
+          color: rgb(251, 235, 5);
+      }
+      100% {
+          opacity: 1;
+          color: red;
+      }
+  }
+  
+  .written2 {
+      color: aliceblue;
+      font-size: 6rem;
+      font-family:fantasy;
+      animation: blink-color 2s infinite;
+      color: rgb(107, 245, 9);
+      z-index: 1;
+  }
+
+
+  .ourhed{
+    font: yellow;
+    text-align: center;
+    justify-content: center;
+  }
+  .ourhed:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px #FF10F0;
+    opacity: 1.0;
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+
+/*new added*/
+
+#intro{
+    color: aliceblue;
+    text-align: center;
+
+}
+.intro {
+    margin-top: 5rem;
+      margin-left: 22%; /* Leave space for the sidebar */
+      width: 75%; /* Adjust width accordingly */
+      height: 100vh;
+      padding: 1.5rem; /* Add some padding */
+      
+      background: rgba(255, 247, 247, 0.5);
+     
+      z-index: 1;
+      border-radius: 0.5rem; /* Rounded corners */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      background-image: url("ad.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+  }
+  .introinner{
+    height: 100%;
+  }
+  
+
+
+
+
+  #about{
+      color: aliceblue;
+      text-align: center;
+  
+  }
+  
+
+
+  
+  .about1 {
+    margin-top: 5rem;
+      margin-left: 22%; /* Leave space for the sidebar */
+      width: 75%; /* Adjust width accordingly */
+      height: 100vh;
+      padding: 1.5rem; /* Add some padding */
+      
+      background: rgba(0.0,0.0,0.0,0.5);
+     
+      z-index: 1;
+      border-radius: 0.5rem; /* Rounded corners */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      background-image: url("https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-100679.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .aboutinner{
+      height: 60vh;
+      background-image: url("https://t4.ftcdn.net/jpg/03/14/81/65/360_F_314816591_yBAWvMvnpTW05AP0q4DCs5B6y2gnL9xA.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+  }
+  .about1 h2 {
+      font-size: 2.5rem; /* Heading size */
+      margin-bottom: 20px; /* Space below heading */
+      color: aliceblue;
+  }
+  
+  .about1 p {
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem; /* Paragraph size */
+      line-height: 1.6; /* Line height for readability */
+      margin-bottom: 1rem; /* Space between paragraphs */
+      color :white;
+      height: 300%;
+     
+      
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+      .about1 {
+          margin-left: 0; /* Remove margin for mobile */
+          width: 100%; /* Full width */
+          background-repeat: no-repeat;
+      }
+      .content{
+          
+              margin-left: 0; /* Remove margin for mobile */
+              width: 100%; /* Full width */
+              background-repeat: no-repeat;
+      }
+  
+      .aboutinner{
+          margin-left: 0; /* Remove margin for mobile */
+              width: 100%; /* Full width */
+              background-repeat: no-repeat;
+      }
+  }
+  
+  
+  
+  
+  @keyframes gradientAnimation//{
+      0% {
+          background: linear-gradient(45deg, #129cf1, #201601);
+      }
+      50% {
+          background: linear-gradient(45deg, #05e410, #2e0109);
+      }
+      100% {
+          background: linear-gradient(45deg, #f95050, #251a01);
+      }
+  }
+  
+  
+  
+  
+  .about1{
+     
+      
+      animation: gradientAnimation 3s infinite alternate;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .about2 {
+      margin-left: 22%; /* Leave space for the sidebar */
+      width: 75%; /* Adjust width accordingly */
+      padding: 1rem; /* Add some padding */
+      background-color: rgba(25, 2, 56, 0.57); /* Light background for contrast */
+      color: #333; /* Dark text color for readability */
+      border-radius: 0.5rem; /* Rounded corners */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .about2 h2 {
+      font-size: 2.5rem; /* Heading size */
+      margin-bottom: 1rem; /* Space below heading */
+  }
+  
+  .about2 p {
+      font-size: 1.2rem; /* Paragraph size */
+      line-height: 1.6; /* Line height for readability */
+      margin-bottom: 15px; /* Space between paragraphs */
+      color: yellow;
+  }
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+      .about2 {
+          margin-left: 0; /* Remove margin for mobile */
+          width: 100%; /* Full width */
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .about2{
+     
+      
+      background: linear-gradient(to right, #024076, #0b0123);
+  }
+  
+
+
+
+
+/* Profile Card */
+.profile-card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 10% auto;
+    box-shadow: 0 4px 8px rgba(63, 1, 1, 0.2);
+}
+
+.profile-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px #FF10F0;
+    opacity: 1.0;
+    cursor: pointer;
+    transform: rotate3d(1, 1, 0, 18deg);
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+.profile-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px #00BFFF;
+}
+
+.profile-card h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.profile-card p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section {
+    margin-left: 22%;
+    width: 75%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: yellow;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: yellow;
+}
+
+/* Contact Section */
+#contact a {
+    color: cyan;
+    text-decoration: none;
+}
+
+
+/* Education Section Table */
+.edu-table {
+    overflow-x: auto;
+    padding: 2rem;
+    background-image: url("https://www.shutterstock.com/image-vector/learn-online-book-digital-futuristic-600nw-2182663111.jpg");
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+   
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(2, 71, 36, 0.2);
+    font-size: 1.3rem;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20%;
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.project-card {
+    background: linear-gradient(to right, #024076, #0b0123);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Skills Section */
+.skills-container {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.skill-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    width: 0;
+    animation: fillAnimation 2s ease-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skill Bar Animation */
+@keyframes fillAnimation {
+    from {
+        width: 0;
+    }
+}
+
+
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Resume Cards */
+.resume-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.resume-card {
+    background: linear-gradient(to right, #0a74da, #095aa3);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.resume-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Resume Download Button */
+.resume-download {
+    margin-top: 30px;
+}
+
+.download-btn {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background: #ff2e00;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Contact Icons */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Hover Effect */
+.contact-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*jhbhj*/
+
+.contact-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-image: linear-gradient(#002244,#0070BB, #004170,#002D72);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    opacity: 0;
+    z-index: 1000; /* Make sure it appears above footer */
+}
+
+.contact-form.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1.0;
+}
+.contact-form:hover{
+    
+    box-shadow: 0px 8px 16px #FF10F0;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Below the form but above the footer */
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+button {
+    font-weight: bold;
+    border-radius: 0.5rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 25px;
+    margin-top: 10px;
+    width: 20rem;
+    background-color: #0072ff;
+    color: white
+}
+button:hover{
+background-color: green;
+}
+
+
+
+
+/*addons*/
+
+/* styles.css */
+
+
+.tech-box {
+    margin-left: 25%; /* Leave space for the sidebar */
+    margin-right: 20%;
+    width: 75%; /* Adjust width accordingly */
+    padding: 1rem; /* Add some padding */
+    background-image: linear-gradient(#002244,#0070BB, #004170,#002D72); /* Light background for contrast */
+    color: #fdf9f9; /* Dark text color for readability */
+      border-radius: 1rem; /* Rounded corners */
+      box-shadow: 0 2px 10px rgba(253, 254, 255, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.tech-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px #00BFFF;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*for quote box+*/
+.quote-box {
+    margin-left: 25%; /* Leave space for the sidebar */
+    margin-right: 20%;
+    width: 75%; /* Adjust width accordingly */
+    padding: 1rem; /* Add some padding */
+    background-image: linear-gradient(#002244,#0070BB, #004170,#002D72); /* Light background for contrast */
+    color: #fdf9f9; /* Dark text color for readability */
+      border-radius: 1rem; /* Rounded corners */
+      box-shadow: 0 2px 10px rgba(253, 254, 255, 0.1); /* Subtle shadow for depth */
+      
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.quote-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px #00BFFF;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.contact-container{
+    margin-left: 45%; /* Leave space for the sidebar */
+    margin-right: 20%;
+   
+    padding: 1rem; /* Add some padding */
+  
+      border-radius: 1rem; /* Rounded corners */
+     
+    text-align: center;
+   
+}
+#contact h2{
+    margin-left: 22%;
+    color: yellow;
+    font-size: 2rem;;
+}
+
+
+/*responsive*/
+/* General Sidebar Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #222;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar h1 {
+    color: white;
+    text-align: center;
+}
+
+.profile-image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* Mobile Styles */
+
+
+.ham-button{
+    height: 1rem;
+    margin: 0;
+    width: 1rem;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png");
+
+}
+.hamburger{
+    height: 3rem;
+    max-width: 3rem;
+    background-color: white;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        position: fixed;
+        z-index: 1100;
+        cursor: pointer;
+        background:transparent;
+        border: none;
+        outline: none;
+        height: 5rem;
+        max-width: 10rem;
+        
+       
+    }
+
+    .ham-button{
+        height: 1rem;
+        margin: 0;
+        width: 1rem;
+        
+    
+    }
+    
+    .about1{
+        margin: 5rem;
+    }
+
+    /* Animation for Hamburger */
+    .hamburger.active div:nth-child(1) {
+        transform: translateY(100px) rotate(45deg);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+
+
+
+    /*for color change*/
+    .ourhed{
+        font: black;
+        text-align: center;
+        justify-content: center;
+      }
+      .ourhed:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px #010256;
+        opacity: 1.0;
+        cursor: pointer;
+        border-radius: 2rem;
+      }
+
+      .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    .theme-toggle:hover {
+        background: #0056b3;
+    }
+
+
+}
+
+
+
+.theme-toggle {
+    position: fixed;
+    margin-right: 1rem;
+    max-width: 4rem;
+    right: 0.25rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+    align-items: center;
+    text-align: center;
+}
+.theme-toggle:hover {
+    background: #0056b3;
+    box-shadow: 0px 8px 16px #00BFFF;
+    opacity: 1.0;
+    cursor: pointer;
+}
+.theme-toggle img{
+    max-height: 5rem;
+    max-width: 2rem;
+
+}

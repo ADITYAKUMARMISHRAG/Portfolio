@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kumar Mishra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="body">
+
+    <div class="container">
+        <header class="sidebar">
+             <!-- Hamburger Menu Button -->
+            <button class="hamburger">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="Menu" class="ham-button" >
+               
+            </button>
+
+            <!--dark theme-->
+            <button class="theme-toggle" onclick="toggleTheme()"><img src="https://static.thenounproject.com/png/4256401-200.png" alt="">Theme</button>
+
+            <h2>Aditya Here</h2>
+            <img src="adm.jpg" alt="Profile Picture" class="profile-image">
+            <nav>
+                <a onclick="scrolltoup()">Home</a>
+                <a onclick="scrolltoabt()">About</a>
+                <a onclick="scrolltoedu()">Education</a>
+                <a onclick="scrolltopro()">Projects</a>
+                <a onclick="scrolltoskills()">Skills</a>
+                <a onclick="scrolltores()">Resume</a>
+                <a onclick="scrolltocont()">Contact</a>
+            </nav>
+
+           
+
+        </header>
+
+        <main class="content">
+            <!-- Cardholder for Profile -->
+            <div class="profile-card" id="photoid">
+                <img src="adg.jpg" alt="Aditya Kumar Mishra"><br>
+                <h2 class="written1">Aditya Kumar Mishra</h2>
+                <p>Web Developer | Tech Enthusiast | CSE Sophomore</p>
+                
+            </div>
+            <p class="written2">I'm a WEBTECH STUDENT!!</p>
+        </main>
+    </div>
+
+    
+    <div class="tech-box">
+        <h2>Web Technologies</h2>
+        <p>Web technologies include HTML, CSS, JavaScript, and various frameworks and tools used to build interactive and responsive web applications.<br>
+            Web technologies form the backbone of the internet, enabling the creation, design, and functionality of websites and web applications. </br>They encompass a range of tools, languages, and frameworks used for developing dynamic and interactive web experiences. </br>The core building blocks of web development include HTML (HyperText Markup Language) for structuring content, CSS (Cascading Style Sheets) for styling and layout, and JavaScript for interactivity. Additionally, backend technologies such as Node.js, Django, and Flask manage server-side operations, databases like MySQL and MongoDB handle data storage, and frameworks like React, Angular, and Vue.js enhance frontend development.</br> With advancements in web technologies, concepts like Progressive Web Apps (PWA), Single Page Applications (SPA), and cloud computing have revolutionized the way users interact with the web, making it faster, more efficient, and highly responsive.
+
+
+
+
+
+
+
+
+
+
+
+        </p>
+    </div>
+
+
+    <!-- About Section -->
+    <section class="about1" id="about">
+        <h2 class="ourhed">About Me</h2>
+        <div class="aboutinner">
+            <p>I am Aditya, a passionate web developer currently pursuing my second year of studies...Currently in second year of Btech in Computer Science And Engineering at Rajiv Gandhi Institute of Petroleum Technology (RGIPT),an Institute of National Importance established under the act of Parliament at par with IITs.
+
+                Pursuing excellence in skills such as Java,HTML CSS,C,Python,AutoCAD as of now.
+                
+                An optimistic person who is striving to find a better place for the nation on a global podium in upcoming years..
+                
+                I am a passionate and ambitious person who is ready to strive hard for the aims I aspire for... 
+                
+                </p>
+            
+        </div>
+    </section>
+
+   
+    <!-- Education Section -->
+<section class="section" id="education">
+    <h2 class="ourhed">Education</h2>
+    <div class="edu-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Performance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10th</td>
+                    <td>Jeevan Marg Sophia</td>
+                    <td>2020</td>
+                    <td>96%</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>CMS</td>
+                    <td>2022</td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <td>BTech (CSE)</td>
+                    <td>RGIPT</td>
+                    <td>2023-Present</td>
+                    <td>9.3 CGPA</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+<section class="section" id="projects">
+    <h2 class="ourhed">Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal website using HTML,CSS,JAVASCRIPT.</p>
+        </div>
+        <div class="project-card">
+            <h3>E-commerce Platform Clone</h3>
+            <p>Built an Amazon.com clone using HTML And CSS</p>
+        </div>
+        <div class="project-card">
+            <h3>Health Report Analysis</h3>
+            <p>Data Visualisation using Python and its Libraries like NUMPY,PANDAS,SEABORN,SKITLEARN</p>
+        </div>
+        <div class="project-card">
+            <h3>Crop Prediction Mechanism</h3>
+            <p>Trained and Predicted using Python and its Libraries like NUMPY,PANDAS,SEABORN,SKITLEARN</p>
+        </div>
+        <div class="project-card">
+            <h3>QR Code Generator</h3>
+            <p>Using HTML,CSS and JAVASCRIPT</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section" id="skills">
+    <h2 class="ourhed">Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+       
+
+        <div class="skill">
+            <span>PYTHON</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>AUTOCAD</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 55%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>ReactJS</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 40%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Node.js & Express</span>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 25%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Resume Section -->
+    <!-- Resume Section -->
+<section class="section" id="resume">
+    <h2 class="ourhed">Resume</h2>
+
+    <div class="resume-container">
+        <!-- Card 1 -->
+        <div class="resume-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="HTML & CSS">
+            <h3>HTML & CSS</h3>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="resume-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="resume-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="ReactJS">
+            <h3>ReactJS</h3>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="resume-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js">
+            <h3>Node.js</h3>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="resume-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Python">
+            <h3>Python</h3>
+        </div>
+    </div>
+
+    <!-- Download Resume Button -->
+    <div class="resume-download">
+        <a href="https://drive.google.com/file/d/1VaCFzkCIRVRC-Is54HXBEpNrb8nzhowI/view?usp=sharing"target="_blank" download class="download-btn">Download Resume</a>
+    </div>
+</section>
+
+
+
+<!--Quote sectoin-->
+<!--addons-->
+<div class="quote-box">
+    <h2 class="ourhed">Quote For The Day</h2>
+    <p id="quote">Click below to generate a quote.</p>
+        <button id="quote-btn">Generate Quote</button>
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+
+   
+    <!-- Contact Section -->
+<section id="contact">
+    <h2 class="ourhed">Contact Me</h2>
+
+    <div class="contact-container">
+        <button id="contact-btn">Contact Me</button>
+        <div class="contact-form">
+            <!--<span class="close-btn">&times;</span>-->
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <div class="button-group">
+                    <button type="submit" onclick="scrolltoup()">Send</button>
+                   
+                </div>
+            </form>
+            <p class="success-msg">Message Sent Successfully!</p>
+        </div>
+    </div>
+    
+    
+
+    
+
+
+
+
+
+
+
+    
+    <div class="contact-container">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/aditya-kumar-mishra-b77a9b27a/" target="_blank" class="contact-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/ADITYAKUMARMISHRAG" target="_blank" class="contact-icon">
+            <img src="https://avatars.slack-edge.com/2020-11-25/1527503386626_319578f21381f9641cd8_512.png" alt="GitHub">
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="6393921452" target="_blank" class="contact-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+        </a>
+
+        <!-- Gmail -->
+        <a href="mailto:23cs3069@rgipt.ac.in" class="contact-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
+        </a>
+    </div>
+</section>
+
+
+</body>
+</html>
